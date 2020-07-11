@@ -19,12 +19,11 @@ dbman.query("TRUNCATE `catalog_marketplace_data`",(e,res) => {});
 dbman.query("UPDATE `rooms` SET `users_now` = '0' WHERE `users_now` > '0';",(e,res) => {});
 dbman.query("UPDATE `users` SET `online` = '0' WHERE `online` = '1'",(e,res) => {});
 dbman.query("UPDATE `server_status` SET `users_online` = '0', `loaded_rooms` = '0'",(e,res) => {});
-/*
-var langman = new LanguageManager();
-langman.Init(dbman);
 
+var langman = new LanguageManager();
 var settingsman = new SettingsManager();
-settingsman.Init(dbman);
-*/
 var figureman = new FigureDataManager();
-figureman.Init();
+
+Promise.all([langman.Init(dbman), settingsman.Init(dbman), figureman.Init()]).then(() => {
+	
+})
