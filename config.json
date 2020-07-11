@@ -1,0 +1,32 @@
+{
+	"db": {
+		"host": "localhost",
+		"port": 3306,
+		"user": "root",
+		"password": "shunz1919",
+		"database": "hotel"
+	},
+	"game": {
+		"tcp": {
+			"bindip": "localhost",
+			"port": 30000,
+			"conperip": 5,
+			"conlimit": 100000,
+			"enablenagles": true
+		}
+	},
+	"rcon": {
+		"tcp": {
+			"bindip": "127.0.0.1",
+			"port": 30001,
+			"allowedaddr": "localhost;127.0.0.1"
+		}
+	},
+	"client": {
+		"ping": {
+			"enabled": 1,
+			"interval": 20000
+		},
+		"maxrequests": 300
+	}
+}

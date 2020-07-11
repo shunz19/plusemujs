@@ -1,0 +1,20 @@
+{
+  "name": "plusemujs",
+  "version": "1.0.0",
+  "description": "Plus Emulator ported to NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "plusEmu",
+    "habbo",
+    "retro"
+  ],
+  "author": "shunzyrole@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "xml-reader": "^2.4.3"
+  }
+}
