@@ -1,2 +1,2 @@
 # plusemujs
-plusEmulator ported to nodeJS
+An attempt to port PlusEmulator to NodeJS
